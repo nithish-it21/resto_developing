@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          margin: 0;
+          padding: 20px;
+        }
+    
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+    
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120vh;
+        }
+    
+        .footer-form {
+          max-width: 400px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .input-wrapper {
+          margin-bottom: 20px;
+        }
+    
+        .input-field {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+    
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-sizing: border-box;
+          resize: vertical;
+          height: 100px;
+        }
+
+        
+    .input-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .input-wrapper input[type="text"] {
+      padding: 10px;
+      /* Add additional styles for the text box */
+    }
+
+    .input-wrapper input[type="radio"] {
+      /* Add additional styles for the radio button */
+    }
+  
+    
+        .btn {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+    
+        .btn:hover {
+          background-color: #555;
+        }
+      </style>      
+</head>
+<body>
+  <div class="container">
+    <form action="" class="footer-form">
+        <h1>Table Reservation</h1>
+        <div class="input-wrapper">
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name" class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email" class="input-field">
+        </div>
+        <div class="input-wrapper">
+            <select name="total_tables" aria-label="Total Table" class="input-field">
+                <option value="person"><b>Table</b></Table></option>
+                <option value="2 person">2 Tables</Table></option>
+                <option value="3 person">3 Tables</option>
+                <option value="4 person">4 Tables</option>
+                <option value="5 person">5 Tables</option>
+                <option value="5 person">6 Tables</option>
+                <option value="5 person">7 Tables</option>
+                <option value="5 person">8 Tables</option>
+                <option value="5 person">9 Tables</option>
+                <option value="5 person">10 Tables</option>
+                
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <select name="Class" aria-label="Select Class" class="input-field">
+              <option value="person" style="color: gold;">Gold</option>
+              <option value="2 person" style="color: gray;">Platinum</option>
+              <option value="3 person" style="color: darkblue;">Diamond</option>
+            </select>
+          </div>
+          
+        
+        <div class="input-wrapper">
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+        </div>
+
+        <div class="input-wrapper">
+            <select name="Session for Food" aria-label="Session" class="input-field">
+                <option value="person"><b>Table</b></Table></option>
+                <option value="2 person">Breakfast</Table></option>
+                <option value="3 person">Lunch</option>
+                <option value="4 person">Dinner</option>
+
+
+                <label for="ac or non-ac">
+                    <input type="radio" id="language1" name="language" value="javascript">
+                    AC
+                  </label>
+
+
+                  <label for="ac or non-ac">
+                    <input type="radio" id="language1" name="language" value="javascript">
+                    NON-AC
+                  </label>
+
+
+        <button type="submit" class="btn">Book Table</button>
+    </form>
+  </div>
+</body>
+</html>
